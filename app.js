@@ -7,6 +7,7 @@ var qs = require('querystring');
 //set up heroku environment variables
 var env_var = {
 	ga_key: process.env.GOOGLE_ANALYTICS_UAID
+	config:set GOOGLE_ANALYTICS_UAID=UA-53428399-2
 };
 
 //Server Details
