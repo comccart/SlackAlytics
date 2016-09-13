@@ -7,7 +7,6 @@ var qs = require('querystring');
 //set up heroku environment variables
 var env_var = {
 	ga_key: process.env.GOOGLE_ANALYTICS_UAID
-	config:set GOOGLE_ANALYTICS_UAID=UA-53428399-2
 };
 
 //Server Details
@@ -65,7 +64,7 @@ app.post('/collect', function(req, res){
 	//Structure Data
 	var data = {
 		v: 		1,
-		tid: 	env_var.ga_key,
+		tid: 	"UA-53428399-2",
 		cid: 	user.id,
 		ds:  	"slack", //data source
 		cs: 	"slack", // campaign source
